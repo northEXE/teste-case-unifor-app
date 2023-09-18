@@ -1,0 +1,32 @@
+.background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+.container-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 64px 32px;
+    background-color: #f2f6fc;
+    border-radius: 18px;
+}
+
+.titulo-modal-disciplina{
+    margin: 12px 8px;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.close-button{
+   position: absolute;
+   left: 90%;
+   background-color: rgb(0,0,0, 0);
+   color: #f2f6fc;
+   font-weight: 700;
+}
