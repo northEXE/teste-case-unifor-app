@@ -1,16 +1,12 @@
 import './App.css'
-import { DiscipinaCard } from './components/disciplina/DisciplinaCard';
-import { useDisciplina } from './hooks/useDisciplina';
+import { Outlet } from 'react-router-dom';
+
 
 function App() {
-  const { data } = useDisciplina();
 
   return (
     <div className="container">
-      <h1 className='titulo-pagina'>Disciplinas</h1>
-      <div className="card-grid">
-        {data?.map(d => <DiscipinaCard disciplina={d} />)}
-      </div>
+     <Outlet />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 export interface Disciplina{
-    idDisciplina: number,
+    idDisciplina?: number,
     nomeDisciplina: string,
     cargaHoraria: number,
     professorResponsavel: string,
