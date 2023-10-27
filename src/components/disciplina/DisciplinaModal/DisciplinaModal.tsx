@@ -1,5 +1,6 @@
-import { Disciplina } from '../../interface/Disciplina';
-import "./style/DisciplinaModal.css"
+import { Link } from 'react-router-dom';
+import { Disciplina } from '../../../interface/Disciplina';
+import "./DisciplinaModal.css"
 
 export interface DisciplinaModalProps {
     disciplina: Disciplina,
@@ -22,6 +23,10 @@ export function DisciplinaModal({disciplina, isOpen, closeModal}: DisciplinaModa
                     <p>Local: {disciplina?.localizacao}</p>
                     <p>Professor(a): {disciplina?.professorResponsavel}</p>
                     <p>Descrição: {disciplina?.descricao}</p>
+                    <div className="button-area">
+                        <Link to={"/editar-disciplina"} className='edit-button'>Editar</Link>
+                        <button className='delete-button'>Excluir</button>
+                    </div>
                 </div>
                 <button className="close-button" onClick={closeModal}>X</button>
             </div>
